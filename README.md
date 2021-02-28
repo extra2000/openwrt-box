@@ -15,6 +15,11 @@ $ git clone --recursive https://github.com/extra2000/openwrt-box.git
 $ cd openwrt-box
 ```
 
+Clone OpenWrt repository:
+```
+$ git clone https://github.com/openwrt/openwrt.git salt/roots/formulas/openwrt-formula/openwrt/files/openwrt
+```
+
 
 ## Creating Vagrant Box
 

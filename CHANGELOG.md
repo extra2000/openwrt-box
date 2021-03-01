@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.0.0](https://github.com/extra2000/openwrt-box/compare/v1.0.0...v2.0.0) (2021-03-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **openwrt-formula:** Require `git clone` OpenWrt repository into `salt/roots/formulas/openwrt-formula/openwrt/files/openwrt`
+
+### Documentations
+
+* **README:** Add instruction to clone OpenWrt repo ([d8997ea](https://github.com/extra2000/openwrt-box/commit/d8997ea544f21dbb9f18604fa3c8ea40ecbcf86e))
+
+
+### Fixes
+
+* **openwrt-formula:** Update `openwrt-formula` to [v2.0.0](https://github.com/extra2000/openwrt-formula/releases/tag/v2.0.0) which remove OpenWrt from `git submodule` ([b0cad59](https://github.com/extra2000/openwrt-box/commit/b0cad5982fbf28eb0461f8288aec36d9cbb52fcb))
+
+
+### Continuous Integrations
+
+* **AppVeyor:** Add instruction to clone OpenWrt repo ([bd4fb40](https://github.com/extra2000/openwrt-box/commit/bd4fb4023b7083648a40ac7116e69e388f509945))
+
 ## 1.0.0 (2021-02-17)
 
 

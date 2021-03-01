@@ -7,6 +7,7 @@ install:
   - sudo dpkg -i vagrant_2.2.9_x86_64.deb
   - sudo vagrant plugin install vagrant-libvirt vagrant-scp vagrant-reload vagrant-vbguest
   - git submodule update --init --recursive
+  - git clone https://github.com/openwrt/openwrt.git salt/roots/formulas/openwrt-formula/openwrt/files/openwrt
 build_script:
   - cp -v vagrant/examples/Vagrantfile.openwrt-box.fedora-33.x86_64.example vagrant/Vagrantfile.openwrt-box
   - cp -v salt/roots/pillar/openwrt.sls.example salt/roots/pillar/openwrt.sls

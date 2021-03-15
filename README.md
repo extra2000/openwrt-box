@@ -73,12 +73,19 @@ To minimize firmware space and RAM, make sure to set the following configuration
     * [ ] `ppp`
         * [ ] `ppp-mod-pppoe`
 
+To find out what parameters have been set by the `make menuconfig`, execute the following command:
+```
+# grep -v "^\s*$\|^\s*\#" .config | less
+```
+
 Build firmware:
 ```
+# FORCE_UNSAFE_CONFIGURE=1 make clean
+# FORCE_UNSAFE_CONFIGURE=1 make download
 # FORCE_UNSAFE_CONFIGURE=1 make
 ```
 
-Output can be found in `/opt/openwrt/src/bin/targets/ramips/mt76x8/`. To download from the Vagrant box to host:
+Output can be found in `/opt/openwrt/src/bin/`. To download from the Vagrant box to host:
 ```
-$ vagrant scp openwrt-box:/opt/openwrt/src/bin/targets/ramips/mt76x8/openwrt-ramips-mt76x8-asus_rt-n11p-b1-initramfs-kernel.bin .
+$ vagrant scp openwrt-box:/opt/openwrt/src/bin .
 ```

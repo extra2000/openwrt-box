@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.0.1](https://github.com/extra2000/openwrt-box/compare/v2.0.0...v2.0.1) (2021-03-15)
+
+
+### Documentations
+
+* **README:** Add instructions to minimize firmware size ([91f8227](https://github.com/extra2000/openwrt-box/commit/91f82278abd6f9411cafcca655628657a2479e4e))
+* **README:** Improve build instructions ([b2eeb09](https://github.com/extra2000/openwrt-box/commit/b2eeb097e88568ccbc465b74dbb7906c51a0de30))
+
 ## [2.0.0](https://github.com/extra2000/openwrt-box/compare/v1.0.0...v2.0.0) (2021-03-01)
 
 

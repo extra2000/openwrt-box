@@ -63,6 +63,16 @@ Set the following option during `menuconfig`:
 * Subtarget: `MT76X8`
 * Target Profile: `Asus RT-N11P B1`
 
+To minimize firmware space and RAM, make sure to set the following configuration while in the `make menuconfig`:
+* Base system:
+    * [ ] `opkg`
+* Network/Firewall:
+    * [ ] `ip6tables`
+    * [ ] `iptables`
+* Network:
+    * [ ] `ppp`
+        * [ ] `ppp-mod-pppoe`
+
 Build firmware:
 ```
 # FORCE_UNSAFE_CONFIGURE=1 make

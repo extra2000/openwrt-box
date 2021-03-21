@@ -91,7 +91,7 @@ Build firmware:
 ```
 # FORCE_UNSAFE_CONFIGURE=1 make clean
 # FORCE_UNSAFE_CONFIGURE=1 make download
-# FORCE_UNSAFE_CONFIGURE=1 make
+# FORCE_UNSAFE_CONFIGURE=1 make -j1 V=s
 ```
 
 Output can be found in `/opt/openwrt/src/bin/`. To download from the Vagrant box to host:

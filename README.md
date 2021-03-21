@@ -73,6 +73,15 @@ To minimize firmware space and RAM, make sure to set the following configuration
     * [ ] `ppp`
         * [ ] `ppp-mod-pppoe`
 
+To build with FreeRadius for WPA3 Enterprise, enable the following as `built-in`:
+* Network/FreeRADIUS (version 3):
+    * `freeradius3`
+    * `freeradius3-common`
+    * `freeradius3-default`
+    * `freeradius3-utils`
+* Network/WirelessAPD:
+    * `wpad`
+
 To find out what parameters have been set by the `make menuconfig`, execute the following command:
 ```
 # grep -v "^\s*$\|^\s*\#" .config | less
@@ -89,3 +98,8 @@ Output can be found in `/opt/openwrt/src/bin/`. To download from the Vagrant box
 ```
 $ vagrant scp openwrt-box:/opt/openwrt/src/bin .
 ```
+
+
+## Configure FreeRadius for WPA3 Enterprise
+
+See https://openwrt.org/docs/guide-user/network/wifi/freeradius#configuration

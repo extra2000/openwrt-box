@@ -48,13 +48,21 @@ To change `uci` configurations, change the values in `salt/roots/formulas/openwr
 $ vagrant rsync
 ```
 
-SSH into the Vagrant box and do the following prerequisite steps:
+SSH into the Vagrant box and then run `extra2000/firmwarebuilder` Podman container:
 ```
 $ vagrant ssh openwrt-box
 $ podman run -it --rm -v /opt/openwrt/src:/opt/src:rw,z -u root:root localhost/extra2000/firmwarebuilder bash
 # cd /opt/src/
+```
+
+Update and install all feeds. Note that these steps are required for the fresh OpenWrt repository only. You don't need to re-execute these steps everytime you run the `extra2000/firmwarebuilder` Podman container:
+```
 # ./scripts/feeds update -a
 # ./scripts/feeds install -a
+```
+
+Configure build:
+```
 # FORCE_UNSAFE_CONFIGURE=1 make menuconfig
 ```
 

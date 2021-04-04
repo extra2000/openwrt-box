@@ -43,9 +43,10 @@ $ vagrant ssh openwrt-box -- sudo salt-call state.sls openwrt
 
 ## Building OpenWrt Firmware
 
-To change `uci` configurations, change the values in `salt/roots/formulas/openwrt-formula/openwrt/files/openwrt/package/base-files/files/bin/config_generate`. Then, `rsync` to upload changes into the Vagrant box:
+To change `uci` configurations, change the values in `salt/roots/formulas/openwrt-formula/openwrt/files/openwrt/package/base-files/files/bin/config_generate`. Then, `rsync` to upload changes into the Vagrant box and re-apply `openwrt` state:
 ```
 $ vagrant rsync
+$ vagrant ssh openwrt-box -- sudo salt-call state.sls openwrt
 ```
 
 SSH into the Vagrant box and then run `extra2000/firmwarebuilder` Podman container:

@@ -1,5 +1,25 @@
 # Changelog
 
+### [2.0.2](https://github.com/extra2000/openwrt-box/compare/v2.0.1...v2.0.2) (2021-04-06)
+
+
+### Code Refactoring
+
+* **submodule:** Remove `cockpit-formula` ([2bcc7af](https://github.com/extra2000/openwrt-box/commit/2bcc7af5f634e163ec4d1cd3bfce5122ce7e6d72))
+
+
+### Fixes
+
+* **submodule:** Update `openwrt-formula` to [v2.0.1](https://github.com/extra2000/openwrt-formula/releases/tag/v2.0.1) which includes python development packages ([3347d8b](https://github.com/extra2000/openwrt-box/commit/3347d8ba9b5348a069ff3dd4d7e7e91a2e200f33))
+
+
+### Documentations
+
+* **README:** Add instructions to enable FreeRadius for WPA2/WPA3 Enterprise ([7869e69](https://github.com/extra2000/openwrt-box/commit/7869e69241a6efda8dca8f77eabf1f718068d5e8))
+* **README:** Add instructions to re-apply `openwrt` state after `vagrant rsync` ([6fc9368](https://github.com/extra2000/openwrt-box/commit/6fc93688537d8c23d8922cdfcc82f5de8342daf7))
+* **README:** Change `make` into more verbose ([bf7b832](https://github.com/extra2000/openwrt-box/commit/bf7b8329c55f7c720a282fcbe496ea2f0c9cbfa9))
+* **README:** Notes to user that they don't need to update and install `feeds` everytime they enter the `extra2000/firmwarebuilder` container ([60dbff9](https://github.com/extra2000/openwrt-box/commit/60dbff98db3ac1b2ae068467a34baa21755258ec))
+
 ### [2.0.1](https://github.com/extra2000/openwrt-box/compare/v2.0.0...v2.0.1) (2021-03-15)
 
 

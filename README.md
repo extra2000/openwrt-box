@@ -30,7 +30,7 @@ $ cp -v salt/roots/pillar/openwrt.sls.example salt/roots/pillar/openwrt.sls
 
 Copy vagrant file from `vagrant/examples/` and then create the vagrant box (you can change to `--provider=libvirt` if you want to use Libvirt provider):
 ```
-$ cp -v vagrant/examples/Vagrantfile.openwrt-box.fedora-33.x86_64.example vagrant/Vagrantfile.openwrt-box
+$ cp -v vagrant/examples/Vagrantfile.openwrt-box.fedora-34.x86_64.example vagrant/Vagrantfile.openwrt-box
 $ vagrant up --provider=virtualbox
 ```
 

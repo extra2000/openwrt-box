@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.0](https://github.com/extra2000/openwrt-box/compare/v2.0.2...v2.1.0) (2021-05-02)
+
+
+### Features
+
+* **vagrant:** Add Fedora 34 `x86_64` Vagrant file ([82fb2b0](https://github.com/extra2000/openwrt-box/commit/82fb2b002e175023b49302b969fd5e11dbf95ad9))
+* **vagrant:** Upgrade CentOS Stream from `v20201217.0` to `v20210210.0` ([84caecc](https://github.com/extra2000/openwrt-box/commit/84caeccf35ddd3a6baf8b7e79f7dde87eab8b9f4))
+* **vagrant:** Upgrade SaltStack from `v3002.2` to `v3003` ([3f4efba](https://github.com/extra2000/openwrt-box/commit/3f4efbaaeec492de4fe5839c83f36b7970c8f99d))
+
+
+### Documentations
+
+* **README:** Set Fedora 34 as default Vagrant instruction ([4ab6b4d](https://github.com/extra2000/openwrt-box/commit/4ab6b4dc59f24f99eec96e30a79fc55c43909966))
+
 ### [2.0.2](https://github.com/extra2000/openwrt-box/compare/v2.0.1...v2.0.2) (2021-04-06)
 
 

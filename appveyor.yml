@@ -10,6 +10,7 @@ install:
   - git clone https://github.com/openwrt/openwrt.git salt/roots/formulas/openwrt-formula/openwrt/files/openwrt
 build_script:
   - cp -v vagrant/examples/Vagrantfile.openwrt-box.fedora-34.x86_64.example vagrant/Vagrantfile.openwrt-box
+  - cp -v salt/roots/pillar/podman.sls.example salt/roots/pillar/podman.sls
   - cp -v salt/roots/pillar/openwrt.sls.example salt/roots/pillar/openwrt.sls
   - sudo vagrant up --provider=libvirt openwrt-box
   - sudo vagrant ssh openwrt-box -- sudo salt-call state.highstate

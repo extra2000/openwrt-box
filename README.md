@@ -75,22 +75,27 @@ Set the following option during `menuconfig`:
 
 To minimize firmware space and RAM, make sure to set the following configuration while in the `make menuconfig`:
 * Base system:
-    * [ ] `opkg`
-* Network/Firewall:
-    * [ ] `ip6tables`
-    * [ ] `iptables`
+    * `< >` `opkg`
+    * `<*>` `zram-swap`
 * Network:
-    * [ ] `ppp`
-        * [ ] `ppp-mod-pppoe`
+    * `< >` `ppp`
+        * `< >` `ppp-mod-pppoe`
 
-To build with FreeRadius for WPA3 Enterprise, enable the following as `built-in`:
-* Network/FreeRADIUS (version 3):
-    * `freeradius3`
-    * `freeradius3-common`
-    * `freeradius3-default`
-    * `freeradius3-utils`
-* Network/WirelessAPD:
-    * `wpad`
+To build with Zabbix agent:
+* Administration > Zabbix:
+    * `<*>` `zabbix-agentd`
+    * `<*>` `zabbix-extra-mac80211`
+    * `<*>` `zabbix-extra-network`
+    * `<*>` `zabbix-extra-wifi`
+
+To build with FreeRadius for WPA3 Enterprise:
+* Network > FreeRADIUS (version 3):
+    * `<*>` `freeradius3`
+    * `<*>` `freeradius3-common`
+    * `<*>` `freeradius3-default`
+    * `<*>` `freeradius3-utils`
+* Network > WirelessAPD:
+    * `<*>` `wpad`
 
 To find out what parameters have been set by the `make menuconfig`, execute the following command:
 ```

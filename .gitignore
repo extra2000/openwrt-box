@@ -2,3 +2,4 @@
 vagrant/*
 !vagrant/examples
 salt/roots/pillar/openwrt.sls
+salt/roots/pillar/podman.sls

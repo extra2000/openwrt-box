@@ -23,8 +23,9 @@ $ git clone https://github.com/openwrt/openwrt.git salt/roots/formulas/openwrt-f
 
 ## Creating Vagrant Box
 
-Create pillar file `openwrt.sls` based on `openwrt.sls.example`:
+Create pillar files:
 ```
+$ cp -v salt/roots/pillar/podman.sls.example salt/roots/pillar/podman.sls
 $ cp -v salt/roots/pillar/openwrt.sls.example salt/roots/pillar/openwrt.sls
 ```
 
